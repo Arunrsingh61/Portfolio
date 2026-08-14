@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Arun Singh — AI &amp; Machine Learning Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Arun Singh — Computer Science graduate specializing in AI, Machine Learning, Computer Vision, RAG architectures, and Full-Stack ML applications.">
+  <meta name="author" content="Arun Singh">
+  <meta property="og:title" content="Arun Singh — AI &amp; ML Engineer Portfolio">
+  <meta property="og:description"
+    content="AI &amp; Machine Learning Engineer specializing in Computer Vision, RAG Pipelines, PyTorch, and Scalable Full-Stack ML.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Display:wght@400;500;700&family=Google+Sans+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- STICKY SITE TOP BAR -->
+  <header class="site-header" id="header">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <div class="header-inner">
+      <a href="#hero" class="header-logo" aria-label="Arun Singh Portfolio Home">
+        <div class="logo-mark">
+          <div class="personal-logo-avatar">
+            <img src="assets/img/arunsingh.png" alt="Arun Singh"
+              onerror="this.onerror=null; this.src='assets/img/profile.jpg';">
+          </div>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-name">Arun Singh</span>
+          <span class="logo-badge">AI / ML Engineer</span>
+        </div>
+      </a>
+
+      <!-- Top Floating Pill Navigation -->
+      <nav class="floating-pill-nav" id="floating-nav" aria-label="Main Sections Navigation">
+        <a href="#hero" class="pill-nav-link active" data-section="hero">About</a>
+        <a href="#tools-marquee" class="pill-nav-link" data-section="tools-marquee">Skills</a>
+        <a href="#projects" class="pill-nav-link" data-section="projects">Projects</a>
+        <a href="#skills" class="pill-nav-link" data-section="skills">Competencies</a>
+        <a href="#interactive-chat" class="pill-nav-link" data-section="interactive-chat">AI Assistant</a>
+        <a href="#education" class="pill-nav-link" data-section="education">Education</a>
+        <a href="#contact" class="pill-nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="resume/Arun_Singh_26.pdf" download="Arun_Singh_2026.pdf" class="btn btn--primary">
+          Resume
+        </a>
+        <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer"
+          class="btn btn--outline" aria-label="LinkedIn Profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      </div>
+
+      <button class="burger-btn" id="burger-btn" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
+          <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <span class="mobile-nav-title">Arun Singh</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#tools-marquee">Tools &amp; Frameworks</a></li>
+      <li><a href="#projects">Featured Projects</a></li>
+      <li><a href="#skills">Competencies</a></li>
+      <li><a href="#interactive-chat">Interactive AI Assistant</a></li>
+      <li><a href="#education">Education &amp; Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="mailto:arunsingh220111077@gmail.com" class="btn btn--outline btn--full">Email Me</a>
+      <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer"
+        class="btn btn--primary btn--full">LinkedIn Profile</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+
+    <!-- ====================================================
+       HERO SECTION WITH ARUN'S PHOTO AS CENTRAL ANIMATION SUBJECT
+       ==================================================== -->
+    <section class="hero" id="hero" aria-label="Hero Section">
+      <div class="hero-bg">
+        <div class="hero-blob hero-blob--1"></div>
+        <div class="hero-blob hero-blob--2"></div>
+        <div class="hero-blob hero-blob--3"></div>
+        <div class="hero-blob hero-blob--4"></div>
+        <div class="hero-blob hero-blob--5"></div>
+      </div>
+
+      <div class="hero-content reveal-up" id="about">
+        <div class="hero-eyebrow">
+          <span class="pulse-indicator"></span>
+          Available for AI / ML Roles • Class of 2026
+        </div>
+
+        <h1 class="hero-title">
+          Building Intelligent Systems<br>
+          <span class="hero-title-gradient">from Concept to Production</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Arun Singh</strong> — a Computer Science graduate specializing in <strong>AI &amp; Machine
+            Learning</strong>. I build end-to-end computer vision systems, RAG pipelines, and full-stack ML products
+          with high-precision engineering and measurable impact.
+        </p>
+
+        <!-- Key Impact Metrics Pills -->
+        <div class="hero-metrics">
+          <div class="metric-pill">
+            <span class="metric-val">~90%</span>
+            <span class="metric-lbl">Processing Time Cut</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-val">75%</span>
+            <span class="metric-lbl">RAG Precision</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-val">&lt;2s</span>
+            <span class="metric-lbl">Sub-second Latency</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn--primary btn--large">Explore Featured Projects</a>
+          <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer"
+            class="btn btn--outline btn--large">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+            </svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- ARUN'S PHOTO ANIMATION SHOWCASE -->
+      <div class="hero-visual reveal-up reveal-up--delay">
+        <div class="hero-photo-showcase">
+          <!-- Ambient Animated Glow Rings -->
+          <div class="photo-glow-ring photo-glow-ring--outer"></div>
+          <div class="photo-glow-ring photo-glow-ring--inner"></div>
+          <div class="photo-orbital-particles">
+            <span class="orbital-node node-1"></span>
+            <span class="orbital-node node-2"></span>
+            <span class="orbital-node node-3"></span>
+          </div>
+
+          <!-- Central Photo Portrait Container -->
+          <div class="hero-photo-frame">
+            <img src="assets/img/profile.png" alt="Arun Singh" class="hero-portrait-img"
+              onerror="this.onerror=null; this.src='assets/img/profile.png';">
+            <div class="photo-overlay-glass"></div>
+            <div class="photo-badge-online" title="Open to Full-Time Roles">
+              <span class="online-dot"></span>
+              <span>Available for Hire</span>
+            </div>
+          </div>
+
+          <!-- Floating Interactive Badges around Photo -->
+          <div class="hero-floating-badge badge-cv">
+            <span class="badge-icon">👁️</span>
+            <div>
+              <strong>Computer Vision &amp; PyTorch</strong>
+              <span>Dlib, SVM, Resemblyzer</span>
+            </div>
+          </div>
+
+          <div class="hero-floating-badge badge-rag">
+            <span class="badge-icon">⚡</span>
+            <div>
+              <strong>RAG &amp; LangChain</strong>
+              <span>Astra DB, sub-2s Latency</span>
+            </div>
+          </div>
+
+          <div class="hero-floating-badge badge-edu">
+            <span class="badge-icon">🎓</span>
+            <div>
+              <strong>B.Tech CSE (AI &amp; ML)</strong>
+              <span>CGPA: 7.85 / 10 • 2026 Grad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       TOOLS & FRAMEWORKS SECTION — INFINITE MOVING MARQUEE
+       ==================================================== -->
+    <section class="tools-marquee-section" id="tools-marquee" aria-label="Tools and Technologies Marquee">
+      <div class="marquee-header-pill">
+        <span class="marquee-pill-dot"></span>
+        <span>Tools &amp; Frameworks Ecosystem</span>
+      </div>
+
+      <!-- Continuous Horizontal Marquee Track -->
+      <div class="tech-marquee-container" aria-hidden="false">
+        <div class="tech-marquee-track">
+
+          <!-- Item Set 1 -->
+          <div class="tech-marquee-content">
+            <!-- Python -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#3776AB"
+                    d="M11.91 0c-3.1 0-5.12.39-5.12 1.84v2.54h5.21v.78H4.63C2.08 5.16 0 6.64 0 9.77c0 3.2 1.74 4.54 4.54 4.54h1.56v-2.15c0-1.63 1.4-3.04 3.04-3.04h5.21c1.28 0 2.3-1.02 2.3-2.3V1.84C16.65.39 14.88 0 11.91 0zm-2.43 1.43c.48 0 .87.39.87.87s-.39.87-.87.87-.87-.39-.87-.87.39-.87.87-.87z" />
+                  <path fill="#FFD43B"
+                    d="M12.09 24c3.1 0 5.12-.39 5.12-1.84v-2.54h-5.21v-.78h7.37c2.55 0 4.63-1.48 4.63-4.61 0-3.2-1.74-4.54-4.54-4.54h-1.56v2.15c0 1.63-1.4 3.04-3.04 3.04H9.65c-1.28 0-2.3 1.02-2.3 2.3v5.04c0 1.45 1.77 1.84 4.74 1.84zm2.43-1.43c-.48 0-.87-.39-.87-.87s.39-.87.87-.87.87.39.87.87-.39.87-.87.87z" />
+                </svg>
+              </span>
+              <span class="tech-name">Python</span>
+            </div>
+
+            <!-- PyTorch -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#EE4C2C"
+                    d="M12.74 0a11.9 11.9 0 0 0-3.32.48l1.37 2.1c.62-.17 1.28-.27 1.95-.27 4.14 0 7.5 3.36 7.5 7.5 0 2.22-.97 4.22-2.51 5.58l1.83 1.83A9.95 9.95 0 0 0 22.24 9.8c0-5.42-4.28-9.8-9.5-9.8zm-7.6 3.1A9.93 9.93 0 0 0 2.24 9.8c0 5.42 4.28 9.8 9.5 9.8 1.18 0 2.3-.22 3.33-.6l-1.37-2.1a7.48 7.48 0 0 1-1.96.26c-4.14 0-7.5-3.36-7.5-7.5 0-2.23.97-4.23 2.52-5.59L5.14 3.1zm10.74 1.28a1.38 1.38 0 1 0 0 2.76 1.38 1.38 0 0 0 0-2.76z" />
+                </svg>
+              </span>
+              <span class="tech-name">PyTorch</span>
+            </div>
+
+            <!-- LangChain -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#1C3C3C"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5h-2v-7h2v7zm0-9h-2V6.5h2v2zm6 9h-2v-4.5c0-.83-.67-1.5-1.5-1.5S12 12.17 12 13v4.5h-2v-7h2v1.1c.63-.7 1.54-1.1 2.5-1.1 1.93 0 3.5 1.57 3.5 3.5v4z" />
+                </svg>
+              </span>
+              <span class="tech-name">LangChain</span>
+            </div>
+
+            <!-- OpenAI -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#10A37F"
+                    d="M22.28 9.93a5.95 5.95 0 0 0-.52-4.91 6.04 6.04 0 0 0-6.51-2.9A6.06 6.06 0 0 0 4.98 4.24a5.99 5.99 0 0 0-3.95 4.3 6.05 6.05 0 0 0 1.25 5.48 6.06 6.06 0 0 0 .52 4.91 6.04 6.04 0 0 0 6.51 2.9A5.99 5.99 0 0 0 13.9 23a6.04 6.04 0 0 0 5.12-2.12 5.99 5.99 0 0 0 3.95-4.3 6.05 6.05 0 0 0-.69-6.65zM13.9 21.6a4.57 4.57 0 0 1-2.94-1.07l.15-.08 4.87-2.82a.77.77 0 0 0 .39-.67v-6.86l2.06 1.19a.07.07 0 0 1 .04.06v5.71a4.56 4.56 0 0 1-4.57 4.54zM3.97 18.06a4.55 4.55 0 0 1-.6-3.08l.15.09 4.87 2.81c.23.13.52.13.75 0l5.94-3.43v2.38a.07.07 0 0 1-.03.06l-4.95 2.86a4.56 4.56 0 0 1-6.13-1.69zM2.84 7.92A4.55 4.55 0 0 1 5.2 5.4v5.8a.77.77 0 0 0 .38.67l5.94 3.43-2.06 1.19a.07.07 0 0 1-.07 0L4.44 13.63A4.56 4.56 0 0 1 2.84 7.92zm15.65 3.73l-5.94-3.43 2.06-1.19a.07.07 0 0 1 .07 0l4.95 2.86a4.56 4.56 0 0 1-1.14 8.24v-5.81a.77.77 0 0 0-.38-.67h.38zm2.67-2.31a.07.07 0 0 1-.04-.06l-4.87-2.81a.77.77 0 0 0-.75 0L9.56 9.9v-2.38a.07.07 0 0 1 .03-.06l4.95-2.86a4.56 4.56 0 0 1 6.64 4.02v.08zM8.33 13.72l-2.06-1.19a.07.07 0 0 1-.04-.06V6.76a4.56 4.56 0 0 1 7.51-3.47l-.15.08-4.87 2.82a.77.77 0 0 0-.39.67v6.86zm1.75-2.14l2.67-1.54 2.67 1.54v3.08l-2.67 1.54-2.67-1.54v-3.08z" />
+                </svg>
+              </span>
+              <span class="tech-name">OpenAI API</span>
+            </div>
+
+            <!-- Hugging Face -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FFD21E"
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-3 7a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 9 9zm6 0a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 15 9zm-3 8a4.5 4.5 0 0 1-4.24-3h8.48A4.5 4.5 0 0 1 12 17z" />
+                </svg>
+              </span>
+              <span class="tech-name">Hugging Face</span>
+            </div>
+
+            <!-- C++ -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#00599C"
+                    d="M22.36 14.4a3.1 3.1 0 0 1-1.6 2.7l-7.3 4.2a3.2 3.2 0 0 1-3.2 0l-7.3-4.2a3.1 3.1 0 0 1-1.6-2.7V5.9a3.1 3.1 0 0 1 1.6-2.7l7.3-4.2a3.2 3.2 0 0 1 3.2 0l7.3 4.2a3.1 3.1 0 0 1 1.6 2.7v8.5zm-11.8-6.1a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 2.6-1.1l1.6 1.6a6 6 0 1 1 0-9.4l-1.6 1.6a3.7 3.7 0 0 0-2.6-.1zm7.2 3.7h1.4v1.4h-1.4v1.4h-1.4v-1.4h-1.4V12h1.4v-1.4h1.4v1.4zm3.6 0h1.4v1.4h-1.4v1.4h-1.4v-1.4h-1.4V12h1.4v-1.4h1.4v1.4z" />
+                </svg>
+              </span>
+              <span class="tech-name">C++ &amp; DSA</span>
+            </div>
+
+            <!-- Scikit-learn -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#F7931E"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2V13h2v3.5zm0-5.5h-2V7h2v4z" />
+                </svg>
+              </span>
+              <span class="tech-name">Scikit-learn</span>
+            </div>
+
+            <!-- Docker -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#2496ED"
+                    d="M13.98 10.02h2.4v2.4h-2.4v-2.4zm-3.2 0h2.4v2.4h-2.4v-2.4zm-3.2 0h2.4v2.4h-2.4v-2.4zm9.6 0h2.4v2.4h-2.4v-2.4zm-9.6-3.2h2.4v2.4h-2.4V6.82zm3.2 0h2.4v2.4h-2.4V6.82zm3.2 0h2.4v2.4h-2.4V6.82zm-9.6 6.4h2.4v2.4h-2.4v-2.4zm18.32 0c-.28-1.57-1.45-2.65-3.07-2.65-.24 0-.48.03-.7.09-.54-2.12-2.43-3.69-4.71-3.69h-.32V3.41H6.18v9.81H2.43c-.88 0-1.63.74-1.63 1.63 0 4.71 3.82 8.53 8.53 8.53 5.48 0 9.87-4.14 10.35-9.52.88-.34 2.15-1.12 2.32-2.17z" />
+                </svg>
+              </span>
+              <span class="tech-name">Docker</span>
+            </div>
+
+            <!-- Apache Kafka -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#231F20"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14.5l-4-2.5-4 2.5 1-4.5-3.5-3 4.5-.5L12 4.5l2 4 4.5.5-3.5 3 1 4.5z" />
+                </svg>
+              </span>
+              <span class="tech-name">Apache Kafka</span>
+            </div>
+
+            <!-- Streamlit -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FF4B4B" d="M12 2.5L2 19h20L12 2.5zm0 4.8l6.1 10.2H5.9L12 7.3z" />
+                </svg>
+              </span>
+              <span class="tech-name">Streamlit</span>
+            </div>
+
+            <!-- Flask -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#000000"
+                    d="M12 2a9 9 0 0 0-9 9c0 3.5 2 6.5 5 8v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2c3-1.5 5-4.5 5-8a9 9 0 0 0-9-9zm-1 16h2v1h-2v-1zm4.5-7.5c-.8.8-1.5 1.5-1.5 2.5h-4c0-1-.7-1.7-1.5-2.5-1-1-1.5-2.2-1.5-3.5a5 5 0 0 1 10 0c0 1.3-.5 2.5-1.5 3.5z" />
+                </svg>
+              </span>
+              <span class="tech-name">Flask</span>
+            </div>
+
+            <!-- Astra DB & Vector DBs -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FF6B4A" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </span>
+              <span class="tech-name">Astra DB &amp; ChromaDB</span>
+            </div>
+
+            <!-- Supabase -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#3ECF8E"
+                    d="M13.4 2.1c-.5-.7-1.6-.4-1.7.5l-1.3 7.8h7.9c.8 0 1.3.9.8 1.6l-8.5 11.2c-.5.7-1.6.4-1.7-.5l1.3-7.8H2.3c-.8 0-1.3-.9-.8-1.6L10 2.1h3.4z" />
+                </svg>
+              </span>
+              <span class="tech-name">Supabase</span>
+            </div>
+
+            <!-- MySQL & SQL -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#4479A1"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2V8h2v8z" />
+                </svg>
+              </span>
+              <span class="tech-name">SQL &amp; MySQL</span>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#F05032"
+                    d="M21.6 10.9L13.1 2.4a2.4 2.4 0 0 0-3.4 0L7.3 4.8l3.6 3.6a2.9 2.9 0 0 1 3.6 3.6l3.5 3.5a2.9 2.9 0 1 1-1.7 1.7L12.7 13.7v4.6a2.9 2.9 0 1 1-2.4 0V13.3a2.9 2.9 0 0 1-1.6-3.8L5.1 5.9 2.4 8.6a2.4 2.4 0 0 0 0 3.4l8.5 8.5a2.4 2.4 0 0 0 3.4 0l7.3-7.3a2.4 2.4 0 0 0 0-3.4l-.01.1z" />
+                </svg>
+              </span>
+              <span class="tech-name">Git &amp; GitHub</span>
+            </div>
+          </div>
+
+          <!-- Duplicated Item Set for Seamless Loop -->
+          <div class="tech-marquee-content" aria-hidden="true">
+            <!-- Python -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#3776AB"
+                    d="M11.91 0c-3.1 0-5.12.39-5.12 1.84v2.54h5.21v.78H4.63C2.08 5.16 0 6.64 0 9.77c0 3.2 1.74 4.54 4.54 4.54h1.56v-2.15c0-1.63 1.4-3.04 3.04-3.04h5.21c1.28 0 2.3-1.02 2.3-2.3V1.84C16.65.39 14.88 0 11.91 0zm-2.43 1.43c.48 0 .87.39.87.87s-.39.87-.87.87-.87-.39-.87-.87.39-.87.87-.87z" />
+                  <path fill="#FFD43B"
+                    d="M12.09 24c3.1 0 5.12-.39 5.12-1.84v-2.54h-5.21v-.78h7.37c2.55 0 4.63-1.48 4.63-4.61 0-3.2-1.74-4.54-4.54-4.54h-1.56v2.15c0 1.63-1.4 3.04-3.04 3.04H9.65c-1.28 0-2.3 1.02-2.3 2.3v5.04c0 1.45 1.77 1.84 4.74 1.84zm2.43-1.43c-.48 0-.87-.39-.87-.87s.39-.87.87-.87.87.39.87.87-.39.87-.87.87z" />
+                </svg>
+              </span>
+              <span class="tech-name">Python</span>
+            </div>
+
+            <!-- PyTorch -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#EE4C2C"
+                    d="M12.74 0a11.9 11.9 0 0 0-3.32.48l1.37 2.1c.62-.17 1.28-.27 1.95-.27 4.14 0 7.5 3.36 7.5 7.5 0 2.22-.97 4.22-2.51 5.58l1.83 1.83A9.95 9.95 0 0 0 22.24 9.8c0-5.42-4.28-9.8-9.5-9.8zm-7.6 3.1A9.93 9.93 0 0 0 2.24 9.8c0 5.42 4.28 9.8 9.5 9.8 1.18 0 2.3-.22 3.33-.6l-1.37-2.1a7.48 7.48 0 0 1-1.96.26c-4.14 0-7.5-3.36-7.5-7.5 0-2.23.97-4.23 2.52-5.59L5.14 3.1zm10.74 1.28a1.38 1.38 0 1 0 0 2.76 1.38 1.38 0 0 0 0-2.76z" />
+                </svg>
+              </span>
+              <span class="tech-name">PyTorch</span>
+            </div>
+
+            <!-- LangChain -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#1C3C3C"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5h-2v-7h2v7zm0-9h-2V6.5h2v2zm6 9h-2v-4.5c0-.83-.67-1.5-1.5-1.5S12 12.17 12 13v4.5h-2v-7h2v1.1c.63-.7 1.54-1.1 2.5-1.1 1.93 0 3.5 1.57 3.5 3.5v4z" />
+                </svg>
+              </span>
+              <span class="tech-name">LangChain</span>
+            </div>
+
+            <!-- OpenAI -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#10A37F"
+                    d="M22.28 9.93a5.95 5.95 0 0 0-.52-4.91 6.04 6.04 0 0 0-6.51-2.9A6.06 6.06 0 0 0 4.98 4.24a5.99 5.99 0 0 0-3.95 4.3 6.05 6.05 0 0 0 1.25 5.48 6.06 6.06 0 0 0 .52 4.91 6.04 6.04 0 0 0 6.51 2.9A5.99 5.99 0 0 0 13.9 23a6.04 6.04 0 0 0 5.12-2.12 5.99 5.99 0 0 0 3.95-4.3 6.05 6.05 0 0 0-.69-6.65zM13.9 21.6a4.57 4.57 0 0 1-2.94-1.07l.15-.08 4.87-2.82a.77.77 0 0 0 .39-.67v-6.86l2.06 1.19a.07.07 0 0 1 .04.06v5.71a4.56 4.56 0 0 1-4.57 4.54zM3.97 18.06a4.55 4.55 0 0 1-.6-3.08l.15.09 4.87 2.81c.23.13.52.13.75 0l5.94-3.43v2.38a.07.07 0 0 1-.03.06l-4.95 2.86a4.56 4.56 0 0 1-6.13-1.69zM2.84 7.92A4.55 4.55 0 0 1 5.2 5.4v5.8a.77.77 0 0 0 .38.67l5.94 3.43-2.06 1.19a.07.07 0 0 1-.07 0L4.44 13.63A4.56 4.56 0 0 1 2.84 7.92zm15.65 3.73l-5.94-3.43 2.06-1.19a.07.07 0 0 1 .07 0l4.95 2.86a4.56 4.56 0 0 1-1.14 8.24v-5.81a.77.77 0 0 0-.38-.67h.38zm2.67-2.31a.07.07 0 0 1-.04-.06l-4.87-2.81a.77.77 0 0 0-.75 0L9.56 9.9v-2.38a.07.07 0 0 1 .03-.06l4.95-2.86a4.56 4.56 0 0 1 6.64 4.02v.08zM8.33 13.72l-2.06-1.19a.07.07 0 0 1-.04-.06V6.76a4.56 4.56 0 0 1 7.51-3.47l-.15.08-4.87 2.82a.77.77 0 0 0-.39.67v6.86zm1.75-2.14l2.67-1.54 2.67 1.54v3.08l-2.67 1.54-2.67-1.54v-3.08z" />
+                </svg>
+              </span>
+              <span class="tech-name">OpenAI API</span>
+            </div>
+
+            <!-- Hugging Face -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FFD21E"
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-3 7a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 9 9zm6 0a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 15 9zm-3 8a4.5 4.5 0 0 1-4.24-3h8.48A4.5 4.5 0 0 1 12 17z" />
+                </svg>
+              </span>
+              <span class="tech-name">Hugging Face</span>
+            </div>
+
+            <!-- C++ -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#00599C"
+                    d="M22.36 14.4a3.1 3.1 0 0 1-1.6 2.7l-7.3 4.2a3.2 3.2 0 0 1-3.2 0l-7.3-4.2a3.1 3.1 0 0 1-1.6-2.7V5.9a3.1 3.1 0 0 1 1.6-2.7l7.3-4.2a3.2 3.2 0 0 1 3.2 0l7.3 4.2a3.1 3.1 0 0 1 1.6 2.7v8.5zm-11.8-6.1a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 2.6-1.1l1.6 1.6a6 6 0 1 1 0-9.4l-1.6 1.6a3.7 3.7 0 0 0-2.6-.1zm7.2 3.7h1.4v1.4h-1.4v1.4h-1.4v-1.4h-1.4V12h1.4v-1.4h1.4v1.4zm3.6 0h1.4v1.4h-1.4v1.4h-1.4v-1.4h-1.4V12h1.4v-1.4h1.4v1.4z" />
+                </svg>
+              </span>
+              <span class="tech-name">C++ &amp; DSA</span>
+            </div>
+
+            <!-- Scikit-learn -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#F7931E"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2V13h2v3.5zm0-5.5h-2V7h2v4z" />
+                </svg>
+              </span>
+              <span class="tech-name">Scikit-learn</span>
+            </div>
+
+            <!-- Docker -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#2496ED"
+                    d="M13.98 10.02h2.4v2.4h-2.4v-2.4zm-3.2 0h2.4v2.4h-2.4v-2.4zm-3.2 0h2.4v2.4h-2.4v-2.4zm9.6 0h2.4v2.4h-2.4v-2.4zm-9.6-3.2h2.4v2.4h-2.4V6.82zm3.2 0h2.4v2.4h-2.4V6.82zm3.2 0h2.4v2.4h-2.4V6.82zm-9.6 6.4h2.4v2.4h-2.4v-2.4zm18.32 0c-.28-1.57-1.45-2.65-3.07-2.65-.24 0-.48.03-.7.09-.54-2.12-2.43-3.69-4.71-3.69h-.32V3.41H6.18v9.81H2.43c-.88 0-1.63.74-1.63 1.63 0 4.71 3.82 8.53 8.53 8.53 5.48 0 9.87-4.14 10.35-9.52.88-.34 2.15-1.12 2.32-2.17z" />
+                </svg>
+              </span>
+              <span class="tech-name">Docker</span>
+            </div>
+
+            <!-- Apache Kafka -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#231F20"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14.5l-4-2.5-4 2.5 1-4.5-3.5-3 4.5-.5L12 4.5l2 4 4.5.5-3.5 3 1 4.5z" />
+                </svg>
+              </span>
+              <span class="tech-name">Apache Kafka</span>
+            </div>
+
+            <!-- Streamlit -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FF4B4B" d="M12 2.5L2 19h20L12 2.5zm0 4.8l6.1 10.2H5.9L12 7.3z" />
+                </svg>
+              </span>
+              <span class="tech-name">Streamlit</span>
+            </div>
+
+            <!-- Flask -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#000000"
+                    d="M12 2a9 9 0 0 0-9 9c0 3.5 2 6.5 5 8v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2c3-1.5 5-4.5 5-8a9 9 0 0 0-9-9zm-1 16h2v1h-2v-1zm4.5-7.5c-.8.8-1.5 1.5-1.5 2.5h-4c0-1-.7-1.7-1.5-2.5-1-1-1.5-2.2-1.5-3.5a5 5 0 0 1 10 0c0 1.3-.5 2.5-1.5 3.5z" />
+                </svg>
+              </span>
+              <span class="tech-name">Flask</span>
+            </div>
+
+            <!-- Astra DB & Vector DBs -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#FF6B4A" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </span>
+              <span class="tech-name">Astra DB &amp; ChromaDB</span>
+            </div>
+
+            <!-- Supabase -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#3ECF8E"
+                    d="M13.4 2.1c-.5-.7-1.6-.4-1.7.5l-1.3 7.8h7.9c.8 0 1.3.9.8 1.6l-8.5 11.2c-.5.7-1.6.4-1.7-.5l1.3-7.8H2.3c-.8 0-1.3-.9-.8-1.6L10 2.1h3.4z" />
+                </svg>
+              </span>
+              <span class="tech-name">Supabase</span>
+            </div>
+
+            <!-- MySQL & SQL -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#4479A1"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2V8h2v8z" />
+                </svg>
+              </span>
+              <span class="tech-name">SQL &amp; MySQL</span>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="tech-item-chip">
+              <span class="tech-logo-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#F05032"
+                    d="M21.6 10.9L13.1 2.4a2.4 2.4 0 0 0-3.4 0L7.3 4.8l3.6 3.6a2.9 2.9 0 0 1 3.6 3.6l3.5 3.5a2.9 2.9 0 1 1-1.7 1.7L12.7 13.7v4.6a2.9 2.9 0 1 1-2.4 0V13.3a2.9 2.9 0 0 1-1.6-3.8L5.1 5.9 2.4 8.6a2.4 2.4 0 0 0 0 3.4l8.5 8.5a2.4 2.4 0 0 0 3.4 0l7.3-7.3a2.4 2.4 0 0 0 0-3.4l-.01.1z" />
+                </svg>
+              </span>
+              <span class="tech-name">Git &amp; GitHub</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       FEATURED PROJECTS SECTION — WITH DYNAMIC PROJECT IMAGES & INTERACTIVE OVERLAYS
+       ==================================================== -->
+    <section class="projects-marquee-section section" id="projects" aria-label="Featured Projects Showcase">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-eyebrow">Production-Grade Implementations</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world AI systems built with verifiable performance metrics, comprehensive
+            testing, and end-to-end deployment.</p>
+          <div class="projects-marquee-hint">
+            <span>✦ Hover to pause • Continuous right-to-left showcase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CAROUSEL -->
+      <div class="projects-carousel-wrapper">
+        <div class="projects-marquee-outer" id="projects-scroll-container">
+          <div class="projects-marquee-track" id="projects-marquee-track">
+
+            <!-- PROJECT SET 1 -->
+            <div class="projects-marquee-content">
+
+              <!-- PROJECT 1: SnapClass AI (Biometrics / CV) -->
+              <div class="project-card-anim" data-category="cv">
+                <!-- Dedicated Project Image & Animated HUD Overlays -->
+                <div class="project-bg-canvas project-bg--face-scan" aria-hidden="true">
+                  <div class="hud-scan-line"></div>
+                  <div class="hud-face-grid">
+                    <div class="hud-corner hud-corner--tl"></div>
+                    <div class="hud-corner hud-corner--tr"></div>
+                    <div class="hud-corner hud-corner--bl"></div>
+                    <div class="hud-corner hud-corner--br"></div>
+                    <div class="hud-landmark-dot hud-dot--1"></div>
+                    <div class="hud-landmark-dot hud-dot--2"></div>
+                    <div class="hud-landmark-dot hud-dot--3"></div>
+                    <div class="hud-landmark-dot hud-dot--4"></div>
+                    <div class="hud-radar-circle"></div>
+                  </div>
+                  <div class="hud-audio-waves">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+
+                <!-- Glassmorphic Content Layer -->
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Dec 2025 – Jan 2026</span>
+                    <span class="tech-pill">Computer Vision</span>
+                    <span class="tech-pill">Biometrics</span>
+                  </div>
+                  <h3 class="project-title">SnapClass — AI Smart Attendance</h3>
+                  <p class="project-desc">
+                    <strong>~90% Reduction:</strong> Cut attendance verification from 15m to 90s per session with
+                    <strong>SVM facial classification (Dlib)</strong>, <strong>voice auth (Resemblyzer)</strong>, and
+                    <strong>QR verification (Segno)</strong>.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">90s</span><span class="lbl">Per Room</span></div>
+                    <div class="proj-metric"><span class="val">3-Way</span><span class="lbl">Biometrics</span></div>
+                    <div class="proj-metric"><span class="val">100%</span><span class="lbl">Automated</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Streamlit</span>
+                    <span>Dlib / SVM</span>
+                    <span>Resemblyzer</span>
+                    <span>Librosa</span>
+                    <span>Supabase</span>
+                    <span>Pandas</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/SnapClass---Making-Attendance-Faster-using-AI"
+                      target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a href="https://snapclass-making-attenance-faster-using-ai.streamlit.app/" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PROJECT 2: Art Fusion (Neural Style Transfer / PyTorch) -->
+              <div class="project-card-anim" data-category="cv">
+                <!-- Dedicated Project Image & Animated Neural Swirl Mesh -->
+                <div class="project-bg-canvas project-bg--style-transfer" aria-hidden="true">
+                  <div class="art-gradient-swirl"></div>
+                  <div class="art-neural-mesh">
+                    <div class="mesh-point mp--1"></div>
+                    <div class="mesh-point mp--2"></div>
+                    <div class="mesh-point mp--3"></div>
+                    <div class="mesh-point mp--4"></div>
+                  </div>
+                  <div class="art-brush-stroke"></div>
+                </div>
+
+                <!-- Glassmorphic Content Layer -->
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Mar 2026 – Apr 2026</span>
+                    <span class="tech-pill">PyTorch</span>
+                    <span class="tech-pill">Neural Style</span>
+                  </div>
+                  <h3 class="project-title">Art Fusion — Neural Style Transfer</h3>
+                  <p class="project-desc">
+                    Implemented AdaIN neural style transfer on pre-trained <strong>VGG encoder in PyTorch</strong> with
+                    configurable alpha-blending and cross-platform hardware validation (Apple MPS/CPU).
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">VGG</span><span class="lbl">Encoder</span></div>
+                    <div class="proj-metric"><span class="val">AdaIN</span><span class="lbl">Layer</span></div>
+                    <div class="proj-metric"><span class="val">MPS/CPU</span><span class="lbl">Inference</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>AdaIN</span>
+                    <span>Flask REST</span>
+                    <span>Hugging Face</span>
+                    <span>HTML</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/Neural_Style_Transfer" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a href="https://huggingface.co/spaces/arunrsingh61/ArtFusion-Neural-Style-Transfer" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PROJECT 3: DocQuery AI (RAG Pipeline / Vector DB) -->
+              <div class="project-card-anim" data-category="rag">
+                <!-- Dedicated Project Image & Holographic Document Beams -->
+                <div class="project-bg-canvas project-bg--rag-network" aria-hidden="true">
+                  <div class="rag-doc-sheet rag-doc-sheet--1">
+                    <div class="doc-line line--1"></div>
+                    <div class="doc-line line--2"></div>
+                    <div class="doc-line line--3"></div>
+                  </div>
+                  <div class="rag-doc-sheet rag-doc-sheet--2">
+                    <div class="doc-line line--1"></div>
+                    <div class="doc-line line--2"></div>
+                  </div>
+                  <div class="rag-vector-node vnode--1"></div>
+                  <div class="rag-vector-node vnode--2"></div>
+                  <div class="rag-vector-node vnode--3"></div>
+                  <div class="rag-vector-line rline--1"></div>
+                  <div class="rag-vector-line rline--2"></div>
+                  <div class="rag-search-beam"></div>
+                </div>
+
+                <!-- Glassmorphic Content Layer -->
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Feb 2026 – Mar 2026</span>
+                    <span class="tech-pill">RAG Pipeline</span>
+                    <span class="tech-pill">LangChain</span>
+                  </div>
+                  <h3 class="project-title">DocQuery AI — PDF Question-Answering</h3>
+                  <p class="project-desc">
+                    Improved retrieval precision from 40% (keyword) to <strong>75% (RAG)</strong> on 50-query benchmarks
+                    over legal/technical PDFs with <strong>LangChain</strong> and <strong>Astra DB</strong>.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">75%</span><span class="lbl">RAG Precision</span></div>
+                    <div class="proj-metric"><span class="val">&lt;2s</span><span class="lbl">Query Latency</span></div>
+                    <div class="proj-metric"><span class="val">50+</span><span class="lbl">Test Queries</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>LangChain</span>
+                    <span>OpenAI API</span>
+                    <span>Astra DB</span>
+                    <span>PyPDF2</span>
+                    <span>Streamlit</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/DocQuery-AI-PDF-Question-Answering-System" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <span class="status-tag">RAG Benchmark 75%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PROJECT 4: E-Commerce AI Recommendation (Kafka / MLOps) -->
+              <div class="project-card-anim" data-category="mlops">
+                <!-- Dedicated Project Image & Streaming Kafka Event Packets -->
+                <div class="project-bg-canvas project-bg--ecommerce-stream" aria-hidden="true">
+                  <div class="ecom-card-node ecnode--1"></div>
+                  <div class="ecom-card-node ecnode--2"></div>
+                  <div class="ecom-card-node ecnode--3"></div>
+                  <div class="ecom-stream-packet packet--1"></div>
+                  <div class="ecom-stream-packet packet--2"></div>
+                  <div class="ecom-stream-line"></div>
+                </div>
+
+                <!-- Glassmorphic Content Layer -->
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">MLOps &amp; Data</span>
+                    <span class="tech-pill">Recommendation</span>
+                    <span class="tech-pill">Kafka Stream</span>
+                  </div>
+                  <h3 class="project-title">AI Recommendation &amp; Analytics Engine</h3>
+                  <p class="project-desc">
+                    Engineered collaborative filtering &amp; embedding pipelines. Streamed real-time user events using
+                    <strong>Apache Kafka</strong> with <strong>Docker &amp; Grafana</strong> observability.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">Kafka</span><span class="lbl">Streaming</span></div>
+                    <div class="proj-metric"><span class="val">Docker</span><span class="lbl">Containers</span></div>
+                    <div class="proj-metric"><span class="val">Grafana</span><span class="lbl">Metrics</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Scikit-learn</span>
+                    <span>Apache Kafka</span>
+                    <span>Docker</span>
+                    <span>Grafana</span>
+                    <span>MySQL</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/Recommender-System-for-E-commerce-Websites" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <span class="status-tag">MLOps Streaming</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- PROJECT SET 2 (Duplicate for Seamless Infinite Marquee Loop) -->
+            <div class="projects-marquee-content" aria-hidden="true">
+
+              <!-- DUPLICATE 1: SnapClass AI -->
+              <div class="project-card-anim" data-category="cv">
+                <div class="project-bg-canvas project-bg--face-scan">
+                  <div class="hud-scan-line"></div>
+                  <div class="hud-face-grid">
+                    <div class="hud-corner hud-corner--tl"></div>
+                    <div class="hud-corner hud-corner--tr"></div>
+                    <div class="hud-corner hud-corner--bl"></div>
+                    <div class="hud-corner hud-corner--br"></div>
+                    <div class="hud-landmark-dot hud-dot--1"></div>
+                    <div class="hud-landmark-dot hud-dot--2"></div>
+                    <div class="hud-landmark-dot hud-dot--3"></div>
+                    <div class="hud-landmark-dot hud-dot--4"></div>
+                    <div class="hud-radar-circle"></div>
+                  </div>
+                  <div class="hud-audio-waves">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Dec 2025 – Jan 2026</span>
+                    <span class="tech-pill">Computer Vision</span>
+                    <span class="tech-pill">Biometrics</span>
+                  </div>
+                  <h3 class="project-title">SnapClass — AI Smart Attendance</h3>
+                  <p class="project-desc">
+                    <strong>~90% Reduction:</strong> Cut attendance verification from 15m to 90s per session with
+                    <strong>SVM facial classification (Dlib)</strong>, <strong>voice auth (Resemblyzer)</strong>, and
+                    <strong>QR verification (Segno)</strong>.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">90s</span><span class="lbl">Per Room</span></div>
+                    <div class="proj-metric"><span class="val">3-Way</span><span class="lbl">Biometrics</span></div>
+                    <div class="proj-metric"><span class="val">100%</span><span class="lbl">Automated</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Streamlit</span>
+                    <span>Dlib / SVM</span>
+                    <span>Resemblyzer</span>
+                    <span>Librosa</span>
+                    <span>Supabase</span>
+                    <span>Pandas</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/SnapClass---Making-Attendance-Faster-using-AI"
+                      target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a href="https://snapclass-making-attenance-faster-using-ai.streamlit.app/" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DUPLICATE 2: Art Fusion -->
+              <div class="project-card-anim" data-category="cv">
+                <div class="project-bg-canvas project-bg--style-transfer">
+                  <div class="art-gradient-swirl"></div>
+                  <div class="art-neural-mesh">
+                    <div class="mesh-point mp--1"></div>
+                    <div class="mesh-point mp--2"></div>
+                    <div class="mesh-point mp--3"></div>
+                    <div class="mesh-point mp--4"></div>
+                  </div>
+                  <div class="art-brush-stroke"></div>
+                </div>
+
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Mar 2026 – Apr 2026</span>
+                    <span class="tech-pill">PyTorch</span>
+                    <span class="tech-pill">Neural Style</span>
+                  </div>
+                  <h3 class="project-title">Art Fusion — Neural Style Transfer</h3>
+                  <p class="project-desc">
+                    Implemented AdaIN neural style transfer on pre-trained <strong>VGG encoder in PyTorch</strong> with
+                    configurable alpha-blending and cross-platform hardware validation (Apple MPS/CPU).
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">VGG</span><span class="lbl">Encoder</span></div>
+                    <div class="proj-metric"><span class="val">AdaIN</span><span class="lbl">Layer</span></div>
+                    <div class="proj-metric"><span class="val">MPS/CPU</span><span class="lbl">Inference</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>AdaIN</span>
+                    <span>Flask REST</span>
+                    <span>Hugging Face</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/Neural_Style_Transfer" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a href="https://huggingface.co/spaces/arunrsingh61/ArtFusion-Neural-Style-Transfer" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DUPLICATE 3: DocQuery AI -->
+              <div class="project-card-anim" data-category="rag">
+                <div class="project-bg-canvas project-bg--rag-network">
+                  <div class="rag-doc-sheet rag-doc-sheet--1">
+                    <div class="doc-line line--1"></div>
+                    <div class="doc-line line--2"></div>
+                    <div class="doc-line line--3"></div>
+                  </div>
+                  <div class="rag-doc-sheet rag-doc-sheet--2">
+                    <div class="doc-line line--1"></div>
+                    <div class="doc-line line--2"></div>
+                  </div>
+                  <div class="rag-vector-node vnode--1"></div>
+                  <div class="rag-vector-node vnode--2"></div>
+                  <div class="rag-vector-node vnode--3"></div>
+                  <div class="rag-vector-line rline--1"></div>
+                  <div class="rag-vector-line rline--2"></div>
+                  <div class="rag-search-beam"></div>
+                </div>
+
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">Feb 2026 – Mar 2026</span>
+                    <span class="tech-pill">RAG Pipeline</span>
+                    <span class="tech-pill">LangChain</span>
+                  </div>
+                  <h3 class="project-title">DocQuery AI — PDF Question-Answering</h3>
+                  <p class="project-desc">
+                    Improved retrieval precision from 40% (keyword) to <strong>75% (RAG)</strong> on 50-query benchmarks
+                    over legal/technical PDFs with <strong>LangChain</strong> and <strong>Astra DB</strong>.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">75%</span><span class="lbl">RAG Precision</span></div>
+                    <div class="proj-metric"><span class="val">&lt;2s</span><span class="lbl">Query Latency</span></div>
+                    <div class="proj-metric"><span class="val">50+</span><span class="lbl">Test Queries</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>LangChain</span>
+                    <span>OpenAI API</span>
+                    <span>Astra DB</span>
+                    <span>PyPDF2</span>
+                    <span>Streamlit</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/DocQuery-AI-PDF-Question-Answering-System" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <span class="status-tag">RAG Benchmark 75%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DUPLICATE 4: E-Commerce AI Recommendation -->
+              <div class="project-card-anim" data-category="mlops">
+                <div class="project-bg-canvas project-bg--ecommerce-stream">
+                  <div class="ecom-card-node ecnode--1"></div>
+                  <div class="ecom-card-node ecnode--2"></div>
+                  <div class="ecom-card-node ecnode--3"></div>
+                  <div class="ecom-stream-packet packet--1"></div>
+                  <div class="ecom-stream-packet packet--2"></div>
+                  <div class="ecom-stream-line"></div>
+                </div>
+
+                <div class="project-card-body">
+                  <div class="project-tag-row">
+                    <span class="project-badge">MLOps &amp; Data</span>
+                    <span class="tech-pill">Recommendation</span>
+                    <span class="tech-pill">Kafka Stream</span>
+                  </div>
+                  <h3 class="project-title">AI Recommendation &amp; Analytics Engine</h3>
+                  <p class="project-desc">
+                    Engineered collaborative filtering &amp; embedding pipelines. Streamed real-time user events using
+                    <strong>Apache Kafka</strong> with <strong>Docker &amp; Grafana</strong> observability.
+                  </p>
+
+                  <div class="project-metric-row">
+                    <div class="proj-metric"><span class="val">Kafka</span><span class="lbl">Streaming</span></div>
+                    <div class="proj-metric"><span class="val">Docker</span><span class="lbl">Containers</span></div>
+                    <div class="proj-metric"><span class="val">Grafana</span><span class="lbl">Metrics</span></div>
+                  </div>
+
+                  <div class="tech-stack-tags">
+                    <span>Scikit-learn</span>
+                    <span>Apache Kafka</span>
+                    <span>Docker</span>
+                    <span>Grafana</span>
+                    <span>MySQL</span>
+                  </div>
+
+                  <div class="project-card-actions">
+                    <a href="https://github.com/Arunrsingh61/Recommender-System-for-E-commerce-Websites" target="_blank"
+                      rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <span class="status-tag">MLOps Streaming</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       SKILLS MATRIX & COMPETENCIES SECTION
+       ==================================================== -->
+    <section class="safety-section section" id="skills" aria-label="Skills Matrix">
+      <div class="container">
+        <div class="safety-inner reveal-up">
+          <div class="safety-text">
+            <div class="section-eyebrow">Technical Competencies</div>
+            <h2 class="section-title">Comprehensive Skills Stack</h2>
+            <p class="section-subtitle">Spanning algorithm design in C++, neural network architectures in PyTorch, and
+              robust backend engineering with modern databases.</p>
+
+            <ul class="safety-list">
+              <li>
+                <div class="safety-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Programming Languages &amp; Fundamentals</strong>
+                  <p>Python, Java, C, C++, SQL, HTML, CSS, JavaScript, Data Structures &amp; Algorithms, OOP.</p>
+                </div>
+              </li>
+              <li>
+                <div class="safety-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Machine Learning, AI &amp; GenAI</strong>
+                  <p>PyTorch, Scikit-learn, Hugging Face, Computer Vision, NLP, Prompt Engineering, LangChain, RAG,
+                    OpenAI API.</p>
+                </div>
+              </li>
+              <li>
+                <div class="safety-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Backend, Vector Stores &amp; MLOps</strong>
+                  <p>Flask, Streamlit, MySQL, MongoDB, Astra DB, ChromaDB, Supabase, Docker, Kafka, Grafana, Prometheus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="safety-visual">
+            <div class="skills-card-cube">
+              <div class="skill-category-box">
+                <div class="skill-category-header">
+                  <span class="cat-dot"></span>
+                  <span>Core Toolset Mastery</span>
+                </div>
+                <div class="skill-chips-cloud">
+                  <span class="skill-badge-pro">Python</span>
+                  <span class="skill-badge-pro">PyTorch</span>
+                  <span class="skill-badge-pro">C++</span>
+                  <span class="skill-badge-pro">LangChain</span>
+                  <span class="skill-badge-pro">OpenAI API</span>
+                  <span class="skill-badge-pro">Scikit-learn</span>
+                  <span class="skill-badge-pro">Dlib / CV</span>
+                  <span class="skill-badge-pro">RAG Architecture</span>
+                  <span class="skill-badge-pro">Astra DB</span>
+                  <span class="skill-badge-pro">ChromaDB</span>
+                  <span class="skill-badge-pro">Docker</span>
+                  <span class="skill-badge-pro">Kafka</span>
+                  <span class="skill-badge-pro">Flask</span>
+                  <span class="skill-badge-pro">Streamlit</span>
+                  <span class="skill-badge-pro">Supabase</span>
+                  <span class="skill-badge-pro">Pandas &amp; NumPy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       INTERACTIVE AI ASSISTANT / PORTFOLIO AGENT (Tabs Section)
+       ==================================================== -->
+    <section class="usecases-section section" id="interactive-chat" aria-label="Interactive AI Agent">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-eyebrow">Interactive Assistant</div>
+          <h2 class="section-title">Ask Arun's Portfolio AI</h2>
+          <p class="section-subtitle">Select a question or topic to inspect how Arun approaches real-world AI
+            challenges.</p>
+        </div>
+
+        <div class="usecase-tabs" id="usecase-tabs">
+          <button class="tab-btn tab-btn--active" data-tab="0">Computer Vision Expertise</button>
+          <button class="tab-btn" data-tab="1">RAG &amp; Document QA</button>
+          <button class="tab-btn" data-tab="2">Performance Benchmarks</button>
+          <button class="tab-btn" data-tab="3">Education &amp; Credentials</button>
+        </div>
+
+        <div class="usecase-panels">
+
+          <!-- TAB 0: Computer Vision -->
+          <div class="usecase-panel usecase-panel--active" data-panel="0">
+            <div class="usecase-text">
+              <h3>Multi-Modal Computer Vision Engineering</h3>
+              <p>From facial feature extraction with Dlib and SVMs to AdaIN neural style transfer in PyTorch. Arun
+                builds pipelines optimized for inference latency and hardware efficiency.</p>
+              <a href="https://github.com/Arunrsingh61" target="_blank" rel="noopener noreferrer"
+                class="btn btn--primary">View CV Code on GitHub</a>
+            </div>
+            <div class="usecase-demo">
+              <div class="quiz-card">
+                <div class="quiz-q">⚡ SnapClass Multi-Modal Auth Pipeline</div>
+                <div class="cv-flow-diagram">
+                  <div class="flow-step">
+                    <span class="flow-icon">📷</span>
+                    <span class="flow-title">Dlib Facial Detection</span>
+                    <span class="flow-sub">SVM 68-landmark vector</span>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">
+                    <span class="flow-icon">🎙️</span>
+                    <span class="flow-title">Voice Auth</span>
+                    <span class="flow-sub">Resemblyzer &amp; Librosa</span>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">
+                    <span class="flow-icon">⚡</span>
+                    <span class="flow-title">Supabase Sync</span>
+                    <span class="flow-sub">Instant 90s validation</span>
+                  </div>
+                </div>
+                <div class="quiz-feedback quiz-feedback--correct">
+                  ✓ 90% reduction in classroom attendance verification time.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 1: RAG -->
+          <div class="usecase-panel" data-panel="1">
+            <div class="usecase-text">
+              <h3>Advanced RAG &amp; Vector Search</h3>
+              <p>LangChain orchestration combined with vector indexing in Astra DB transforms unstructured, complex
+                documents into high-precision, sub-2-second conversational answers.</p>
+              <a href="https://github.com/Arunrsingh61" target="_blank" rel="noopener noreferrer"
+                class="btn btn--primary">Inspect RAG Architecture</a>
+            </div>
+            <div class="usecase-demo">
+              <div class="research-demo">
+                <div class="research-source">
+                  <div class="source-dot"></div> DocQuery AI: Vector Indexing &amp; Query Pipeline
+                </div>
+                <div class="research-progress">
+                  <div class="research-bar"></div>
+                </div>
+                <div class="research-tags">
+                  <span class="research-tag">LangChain</span>
+                  <span class="research-tag">Astra DB</span>
+                  <span class="research-tag">Precision: 75% (vs 40% Keyword)</span>
+                  <span class="research-tag">Latency: &lt;2s</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Benchmarks -->
+          <div class="usecase-panel" data-panel="2">
+            <div class="usecase-text">
+              <h3>Systematic Testing &amp; Benchmarking</h3>
+              <p>Every project Arun builds is validated with rigorous pre- and post-automation test sets, tracking
+                retrieval precision, inference latency across CPU/MPS, and structured analytics.</p>
+              <a href="mailto:arunsingh220111077@gmail.com" class="btn btn--primary">Request Detailed Reports</a>
+            </div>
+            <div class="usecase-demo">
+              <div class="quiz-card">
+                <div class="quiz-q">Key Metrics Summary</div>
+                <div class="quiz-options">
+                  <div class="quiz-option quiz-option--correct">
+                    <span>🚀 Attendance Speedup: 15 min → 90 sec per classroom</span>
+                  </div>
+                  <div class="quiz-option quiz-option--correct">
+                    <span>🎯 RAG Precision Gain: 40% → 75% precision across 50 test queries</span>
+                  </div>
+                  <div class="quiz-option quiz-option--correct">
+                    <span>⏱️ Unstructured PDF QA: Sub-2-second query response benchmark</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Education & Credentials -->
+          <div class="usecase-panel" data-panel="3">
+            <div class="usecase-text">
+              <h3>Academics &amp; Industry Specializations</h3>
+              <p>B.Tech in Computer Science with AI &amp; Machine Learning Specialization at Graphic Era Hill University
+                (CGPA 7.85 / 10), complemented by Deep Learning &amp; ML Specializations.</p>
+              <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer"
+                class="btn btn--primary">View Verified Credentials</a>
+            </div>
+            <div class="usecase-demo">
+              <div class="creative-grid">
+                <div class="creative-item creative-item--img">
+                  <span class="degree-badge">B.Tech CSE (AI &amp; ML)</span>
+                  <h4>Graphic Era Hill University</h4>
+                  <p>Dehradun • CGPA: 7.85 / 10 • Graduated 2026</p>
+                </div>
+                <div class="creative-item creative-item--music">
+                  <span class="cert-badge">Specialization</span>
+                  <h4>Machine Learning</h4>
+                  <p>Apna College — 2026</p>
+                </div>
+                <div class="creative-item creative-item--video">
+                  <span class="cert-badge">Specialization</span>
+                  <h4>Deep Learning</h4>
+                  <p>Apna College — 2026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       EDUCATION & CERTIFICATIONS CARDS
+       ==================================================== -->
+    <section class="plans-section section" id="education" aria-label="Education and Certifications">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-eyebrow">Academic Background</div>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-subtitle">Solid theoretical grounding combined with rigorous hands-on deep learning
+            specializations.</p>
+        </div>
+
+        <div class="plans-grid reveal-up">
+          <!-- Education Card -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Graduated 2026</div>
+            <div class="plan-name">Bachelor of Technology in Computer Science</div>
+            <div class="plan-price">7.85<span> / 10 CGPA</span></div>
+            <p class="plan-desc">Graphic Era Hill University, Dehradun<br><strong>Specialisation in Artificial
+                Intelligence &amp; Machine Learning</strong></p>
+            <ul class="plan-features">
+              <li>Data Structures &amp; Algorithms foundation in C++</li>
+              <li>Object-Oriented Programming (OOP) &amp; Software Engineering</li>
+              <li>Computer Vision &amp; Neural Network Architectures</li>
+              <li>Database Management Systems &amp; Distributed Systems</li>
+              <li>Probability, Statistics &amp; Optimization for ML</li>
+            </ul>
+            <a href="https://drive.google.com/drive/folders/1-0ZIoC82ykl6pHJ9cU-tD1ccehmuGoRC?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full">Verify Degree Details</a>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="plan-card">
+            <div class="plan-name">Professional AI Specializations</div>
+            <div class="plan-price">2026<span> Certified</span></div>
+            <p class="plan-desc">Intensive programs covering mathematical and applied aspects of modern AI systems.</p>
+            <ul class="plan-features">
+              <li><strong>Deep Learning Specialization</strong> — Apna College (2026)</li>
+              <li><strong>Machine Learning Specialization</strong> — Apna College (2026)</li>
+              <li>PyTorch, Transformers &amp; LLM Fine-tuning</li>
+              <li>Convolutional Neural Networks &amp; Vision Backbones</li>
+              <li>Vector Search, Embeddings &amp; RAG Architecture</li>
+            </ul>
+            <a href="https://drive.google.com/drive/folders/1S1-eh6pkGFuStckOXyyOFdP1YKi5__Ur?usp=drive_link"
+              target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full">Request Certificate
+              Copies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+       CALL TO ACTION / CONTACT SECTION
+       ==================================================== -->
+    <section class="cta-section" id="contact" aria-label="Contact Section">
+      <div class="cta-bg">
+        <div class="cta-blob cta-blob--1"></div>
+        <div class="cta-blob cta-blob--2"></div>
+        <div class="cta-blob cta-blob--3"></div>
+      </div>
+      <div class="container">
+        <div class="cta-inner reveal-up">
+          <div class="cta-brand-mark">
+            <div class="cta-avatar-chip">
+              <img src="assets/img/arunsingh.png" alt="Arun Singh"
+                onerror="this.onerror=null; this.src='assets/img/profile.jpg';">
+            </div>
+          </div>
+          <h2 class="cta-title">Let's Build the Next Generation of AI</h2>
+          <p class="cta-sub">Currently open for full-time AI/ML Engineer roles, ML research opportunities, and
+            cutting-edge software engineering teams.</p>
+
+          <div class="cta-contact-details">
+            <a href="mailto:arunsingh220111077@gmail.com" class="cta-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              arunsingh220111077@gmail.com
+            </a>
+            <a href="tel:+919520076738" class="cta-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +91-9520076738
+            </a>
+          </div>
+
+          <div class="cta-btns">
+            <a href="mailto:arunsingh220111077@gmail.com" class="btn btn--primary btn--large btn--white">Send an
+              Email</a>
+            <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer"
+              class="btn btn--outline btn--large btn--white-outline">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-name">Arun Singh</span>
+          <span class="footer-title">AI &amp; Machine Learning Engineer</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#tools-marquee">Tools</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="https://www.linkedin.com/in/arunrsingh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:arunsingh220111077@gmail.com">Email</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Arun Singh. High-Performance AI &amp; Machine Learning Portfolio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
